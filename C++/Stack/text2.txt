@@ -1,0 +1,51 @@
+Pushing index 0: 5
+Stack:
+ [5]
+
+Pushing index 1: 40
+Stack:
+ [5, 40]
+
+Pushing index 2: 23
+Stack:
+ [5, 40, 23]
+
+Pushing index 3: 234
+Stack:
+ [5, 40, 23, 234]
+
+Pushing index 4: 2
+Stack:
+ [5, 40, 23, 234, 2]
+
+Stack:
+ [5, 40, 23, 234, 2]
+
+Stack 4 popped!
+Stack:
+ [5, 40, 23, 234]
+
+Stack 3 popped!
+Stack:
+ [5, 40, 23]
+
+Stack 2 popped!
+Stack:
+ [5, 40]
+
+Stack 1 popped!
+Stack:
+ [5]
+
+Stack 0 popped!
+Stack:
+ [1]
+
+Stack:
+ [1]
+
+[0, 0, 0, 0, 0]
+Pushing index 0: 6
+Stack:
+ [6]
+
