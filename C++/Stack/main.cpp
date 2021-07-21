@@ -1,17 +1,14 @@
 #include <iostream>
 #include "stack.cpp"
-
 int main()
 {
     Stack s;
+
+    for(int i = 0; i < 7; ++i)
+        s.push(i);
     
-
-
-
-    s.push(5);
-    s.printStack();
-
-    for(int i = 0; i < 6; ++i){
+     
+    for(int i = 0; i < 7; ++i){
         s.pop(); 
     }
 
@@ -19,6 +16,8 @@ int main()
     s.printFullStack();
 
     s.push(6);
+    
+    s.printFullStack();
 
     return 0;
 }
