@@ -7,7 +7,7 @@ private:
     int rear;
 
 public:
-    Queue() : arr{0}, rear(-1), front(-1) {} //Constructor
+    Queue() : arr{0}, front(-1), rear(-1) {} //Constructor
    
     //Getters
     int getFront() { return front; }
@@ -49,16 +49,16 @@ public:
     bool isEmpty(){
 
         bool condition(false);
-        if(front == -1 && rear == -1) 
-            condition = true; 
+        if(front == -1 && rear == -1){
+            condition = true;}
         else condition = false;
         
         return condition;     
     }
 
     bool isFull(){
-        if(rear == sizeof(arr)-1)
-            return true;
+        if(rear == sizeof(arr)/sizeof(arr[0])-1){
+            return true;}
         else
             return false;
     }
@@ -80,6 +80,26 @@ int main()
     Queue q;
     
     q.enqueue(5);
+
+    q.display();
+
+    q.enqueue(7);
+
+    q.display();
+
+    q.enqueue(76);
+
+    q.display();
+
+    q.enqueue(34);
+
+    q.display();
+
+    q.enqueue(-203);
+
+    q.enqueue(432);
+
+    q.enqueue(832);
 
     q.display();
     return 0;
