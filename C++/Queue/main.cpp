@@ -21,6 +21,8 @@ public:
             rear = front = 0;
         else
             rear++;
+        
+        std::cout << "Element at index " << rear << " is enqueued." << std::endl;
 
         arr[rear] = value;
     }
@@ -35,11 +37,14 @@ public:
         else if(front == rear)
         {
             x = arr[front];
+            arr[front] = 0;
             front = rear = -1;
         }
         else
         {
             x = arr[front];
+            std::cout << "Element at index " << front << " is dequeued." << std::endl;
+            arr[front] = 0;
             front++;
         }
 
@@ -65,21 +70,33 @@ public:
 
     void display()
     {
-       std::cout << "\nQueue:\n ["; 
+       std::cout << "Queue:\n ["; 
         size_t length = sizeof(arr) / sizeof(arr[0]);
         size_t i = 0;
         for(i = 0; i < length-1; ++i)
             std::cout << arr[i] << ',';
-        std::cout << arr[i] << ']' << std::endl;
+        std::cout << arr[i] << "]\n" << std::endl;
 
     }
 };
 
 int main()
 {
+    using namespace std;
     Queue q;
     
-    q.enqueue(5);
+    int i;
+    for(i = 0; i < 5; ++i){
+        q.enqueue(i+1);
+        q.display();
+    }
+
+    cout << '\n' << endl;
+
+    for( ; i >= 0; --i){
+        q.dequeue();
+        q.display();
+    }
 
     q.display();
 
