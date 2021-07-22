@@ -83,24 +83,5 @@ int main()
 
     q.display();
 
-    q.enqueue(7);
-
-    q.display();
-
-    q.enqueue(76);
-
-    q.display();
-
-    q.enqueue(34);
-
-    q.display();
-
-    q.enqueue(-203);
-
-    q.enqueue(432);
-
-    q.enqueue(832);
-
-    q.display();
     return 0;
 }
